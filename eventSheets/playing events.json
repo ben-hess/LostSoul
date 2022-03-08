@@ -1,0 +1,488 @@
+{
+	"name": "Playing Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 835543279883876
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Background",
+					"sid": 406765287312476,
+					"parameters": {
+						"x": "427",
+						"y": "floor(Camera.Y / 960) * 960 + 480"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Background2",
+					"sid": 564925910467815,
+					"parameters": {
+						"x": "427",
+						"y": "floor((Camera.Y + 480) / 960) * 960"
+					}
+				},
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 440886097502811,
+					"parameters": {
+						"y": "Camera.Y"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Collision",
+					"sid": 997740561626095,
+					"parameters": {
+						"y": "Player.Y"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Camera",
+					"sid": 279767804269167,
+					"parameters": {
+						"y": "Player.Y - 50"
+					}
+				}
+			],
+			"sid": 955563116371622
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 990899578988862,
+					"parameters": {
+						"interval-seconds": "random(4, 7)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 987389102290075,
+					"parameters": {
+						"object-to-create": "Demon",
+						"layer": "0",
+						"x": "choose(random(150, 200), random(650, 700))",
+						"y": "Player.Y - 750",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 976795773329381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Demon",
+					"sid": 946548566992569
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "Demon",
+					"sid": 302724831577159,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "450"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Demon",
+					"sid": 273889535501620,
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-flipped",
+					"objectClass": "Demon",
+					"sid": 339666157457137,
+					"parameters": {
+						"state": "flipped"
+					}
+				}
+			],
+			"sid": 999624062133470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Demon",
+					"sid": 226725125605496,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Demon",
+					"sid": 379697641262882
+				}
+			],
+			"sid": 854173251356618
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Demon",
+					"sid": 984647697983876,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "852"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Demon",
+					"sid": 376709318984297
+				}
+			],
+			"sid": 879835605726184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 923723180925100,
+					"parameters": {
+						"object": "GrimReaper"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 864468639843901,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 663783007910045,
+					"parameters": {
+						"layout": "Game Over"
+					}
+				}
+			],
+			"sid": 244007988754048,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 490528403888649,
+					"parameters": {
+						"object": "Demon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 967073440072090,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Demon",
+					"sid": 335098974256499
+				}
+			],
+			"sid": 513395574590917
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Player",
+					"sid": 491676150892689,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 564316275669348,
+					"parameters": {
+						"animation": "\"Walking\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 862641540383229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Player",
+					"sid": 968683953535970,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 977408871317417,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 326210209973742
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Demon",
+					"sid": 932041802528733,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Demon",
+					"sid": 941802350213098,
+					"parameters": {
+						"animation": "\"Stationary\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 471788178104630
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Demon",
+					"sid": 880974793536314,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Demon",
+					"sid": 324662944360553,
+					"parameters": {
+						"animation": "\"Moving\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 212376697297413
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Demon",
+					"sid": 809647825784520
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Demon",
+					"sid": 482245629582356,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "random(100, 300)"
+					}
+				}
+			],
+			"sid": 857415927530922
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 853745295926254,
+					"parameters": {
+						"first-value": "distance(Player.X, Player.Y, Demon.X, Demon.Y)",
+						"comparison": 2,
+						"second-value": "500"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Demon",
+					"sid": 149346687380682,
+					"parameters": {
+						"instance-variable": "hasFireball"
+					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Demon",
+					"sid": 991670937443817
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 511862621218613,
+					"parameters": {
+						"object-to-create": "Fireball",
+						"layer": "0",
+						"x": "Demon.X",
+						"y": "Demon.Y",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Demon",
+					"sid": 897140087975357,
+					"parameters": {
+						"instance-variable": "hasFireball",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Demon",
+					"sid": 654430310289590,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "random(100, 300)"
+					}
+				}
+			],
+			"sid": 672842491909827
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Fireball",
+					"sid": 696791992827287
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Fireball",
+					"sid": 583035732363921,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y - 100"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Fireball",
+					"sid": 222548135913692,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "250"
+					}
+				}
+			],
+			"sid": 567719075463246
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 513410566816517,
+					"parameters": {
+						"object": "Fireball"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 311335202561739,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Fireball",
+					"sid": 169455795292457
+				}
+			],
+			"sid": 249371451651385
+		}
+	],
+	"sid": 495272229182463
+}

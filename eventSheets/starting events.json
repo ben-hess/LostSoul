@@ -1,0 +1,152 @@
+{
+	"name": "Starting Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 137369830168527,
+					"parameters": {
+						"object": "StartGame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "StartGame",
+					"sid": 586077215007717,
+					"parameters": {
+						"animation": "\"Hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 323504227135589
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 616116599810371
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "StartGame",
+					"sid": 260660221494039,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 466570552170690
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 790281086338853,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "StartGame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 892065006730620,
+					"parameters": {
+						"layout": "Playing"
+					}
+				}
+			],
+			"sid": 269856245462829
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 533278849161760,
+					"parameters": {
+						"object": "Credits"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Credits",
+					"sid": 501051832852771,
+					"parameters": {
+						"animation": "\"Hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 338428468184136
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 610342763617978
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Credits",
+					"sid": 427850349606452,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 217336290083732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 691313612610843,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Credits"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 830227506466131,
+					"parameters": {
+						"layout": "Credits"
+					}
+				}
+			],
+			"sid": 413093209525413
+		}
+	],
+	"sid": 907866529447905
+}

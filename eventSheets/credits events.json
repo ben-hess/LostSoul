@@ -1,0 +1,79 @@
+{
+	"name": "Credits Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 179849762480027,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Back",
+					"sid": 400739935655386,
+					"parameters": {
+						"animation": "\"Hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 676454150223071
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 996594862842389
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Back",
+					"sid": 865157034761860,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 458012573821030
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 112224955600816,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 202302074131894,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 372292377047010
+		}
+	],
+	"sid": 431722241905348
+}

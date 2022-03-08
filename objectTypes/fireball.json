@@ -1,0 +1,95 @@
+{
+	"name": "Fireball",
+	"plugin-id": "Sprite",
+	"sid": 999940261048304,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 295958041278985
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 487,
+						"height": 362,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1318995,
+						"collisionPoly": {
+							"points": [
+								0.11704312114989733,
+								0.1574585635359116,
+								0.5,
+								0.20165745856353592,
+								0.7597535934291582,
+								0.32044198895027626,
+								0.9096509240246407,
+								0.5,
+								0.8542094455852156,
+								0.8038674033149171,
+								0.5,
+								0.8093922651933702,
+								0.2813141683778234,
+								0.6187845303867403,
+								0.18480492813141683,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 495,
+						"height": 402,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9044127,
+						"collisionPoly": {
+							"points": [
+								0.1292929292929293,
+								0.15920398009950248,
+								0.5,
+								0.2885572139303483,
+								0.6828282828282828,
+								0.3880597014925373,
+								0.797979797979798,
+								0.5,
+								0.8262626262626263,
+								0.7860696517412935,
+								0.5,
+								0.8781094527363185,
+								0.2828282828282828,
+								0.6492537313432836,
+								0.17373737373737375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 875375914213199,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}

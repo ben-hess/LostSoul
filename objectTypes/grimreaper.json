@@ -1,0 +1,68 @@
+{
+	"name": "GrimReaper",
+	"plugin-id": "Sprite",
+	"sid": 234497049573995,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 373142155442884
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 730944603796016
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1671,
+						"height": 2335,
+						"originX": 0.8192698982645122,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 472375,
+						"collisionPoly": {
+							"points": [
+								0.6959903883691466,
+								0.3250535658646452,
+								0.8073009077765002,
+								0.40749455519355615,
+								0.7301019181183616,
+								0.5173446753295635,
+								0.7582286421515005,
+								0.7914345849504824,
+								1,
+								0.9914346895074946,
+								0,
+								1,
+								0.001196888090963512,
+								0.00042826552462526765,
+								0.6971871668817333,
+								0.00685224185919098
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 970083473961464,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

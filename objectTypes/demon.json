@@ -1,0 +1,183 @@
+{
+	"name": "Demon",
+	"plugin-id": "Sprite",
+	"sid": 184603883180925,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"sid": 941900648304783
+		},
+		{
+			"name": "hasFireball",
+			"type": "boolean",
+			"desc": "Whether or not the demon has shot the fireball",
+			"sid": 144983578423378
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 516353766350114
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1228,
+						"height": 1200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9818631,
+						"collisionPoly": {
+							"points": [
+								0.42915324357122864,
+								0.4424999745686849,
+								0.6661237287987316,
+								0.15499999999999986,
+								0.7915308949225109,
+								0.20249994913736974,
+								0.7198698062461815,
+								0.39999999999999997,
+								0.498371335504886,
+								0.4866666666666667,
+								0.5,
+								0.48583333333333334,
+								0.32247557003257277,
+								0.6025,
+								0.2825732401993841,
+								0.583333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1209,
+						"height": 1198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7660809,
+						"collisionPoly": {
+							"points": [
+								0.39275932782215933,
+								0.13532144541201735,
+								0.6661237287987316,
+								0.15499999999999986,
+								0.7915308949225109,
+								0.20249994913736974,
+								0.7331036820603876,
+								0.49348912310719706,
+								0.511605211319092,
+								0.49000551388273,
+								0.33457428054241656,
+								0.6026947690595439,
+								0.3059329728448143,
+								0.5757888401649233,
+								0.42483967698210706,
+								0.41972739973795226
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 887011642512559,
+				"name": "Moving",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1180,
+						"height": 1184,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5078390,
+						"collisionPoly": {
+							"points": [
+								0.34152542372881356,
+								0.3403716216216216,
+								0.5,
+								0.2905405405405405,
+								0.7305084745762712,
+								0.2677364864864865,
+								0.7694915254237288,
+								0.5,
+								0.538135593220339,
+								0.5396959459459459,
+								0.5,
+								0.512668918918919,
+								0.47372881355932206,
+								0.527027027027027,
+								0.37033898305084745,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 979,
+						"height": 1166,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8037576,
+						"collisionPoly": {
+							"points": [
+								0.3830439223697651,
+								0.3216123499142367,
+								0.5,
+								0.07461406518010291,
+								0.6465781409601634,
+								0.29588336192109777,
+								0.49846782431052095,
+								0.5,
+								0.424923391215526,
+								0.5171526586620926,
+								0.5,
+								0.4897084048027444,
+								0.0010214504596527069,
+								0.9982847341337907,
+								0.27068437180796734,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 939450877845891,
+				"name": "Stationary",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 4
+			}
+		],
+		"subfolders": []
+	}
+}
