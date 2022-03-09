@@ -88,7 +88,9 @@
 			"Mouse",
 			"Credits",
 			"Credit",
-			"Back"
+			"Back",
+			"corntext",
+			"Restart"
 		],
 		"subfolders": []
 	},
@@ -111,7 +113,8 @@
 		"items": [
 			"Playing Events",
 			"Credits Events",
-			"Starting Events"
+			"Starting Events",
+			"Game Over Events"
 		],
 		"subfolders": []
 	},

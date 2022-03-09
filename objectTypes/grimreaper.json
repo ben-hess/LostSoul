@@ -9,11 +9,6 @@
 			"behaviorId": "Bullet",
 			"name": "Bullet",
 			"sid": 373142155442884
-		},
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 730944603796016
 		}
 	],
 	"effectTypes": [],

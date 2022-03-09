@@ -277,8 +277,8 @@
 						}
 					},
 					"world": {
-						"x": 437,
-						"y": 353,
+						"x": 426.5,
+						"y": 352,
 						"width": 60.77292315901697,
 						"height": 75.55468936796396,
 						"originX": 0.5,
@@ -314,12 +314,6 @@
 								"set-angle": true,
 								"step": false,
 								"enabled": true
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},
@@ -407,5 +401,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "orthographic",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "Playing Events"
 }

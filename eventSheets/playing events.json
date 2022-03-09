@@ -2,6 +2,26 @@
 	"name": "Playing Events",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "spawn",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 680762312967091
+		},
+		{
+			"eventType": "variable",
+			"name": "nextSpawnY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 531154465656173
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -60,29 +80,132 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
+					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 990899578988862,
+					"sid": 818567552218056,
 					"parameters": {
-						"interval-seconds": "random(4, 7)"
+						"first-value": "Player.Y",
+						"comparison": 2,
+						"second-value": "nextSpawnY"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "create-object",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 987389102290075,
+					"sid": 515821428345301,
 					"parameters": {
-						"object-to-create": "Demon",
-						"layer": "0",
-						"x": "choose(random(150, 200), random(650, 700))",
-						"y": "Player.Y - 750",
-						"create-hierarchy": false
+						"variable": "spawn",
+						"value": "choose(0, 1)"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 364596333867288,
+					"parameters": {
+						"variable": "nextSpawnY",
+						"value": "random(-300, -800)"
 					}
 				}
 			],
-			"sid": 976795773329381
+			"sid": 976795773329381,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 307521554051765,
+							"parameters": {
+								"first-value": "spawn",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 795728654386517,
+							"parameters": {
+								"object-to-create": "Demon",
+								"layer": "0",
+								"x": "choose(random(150, 200), random(650, 700))",
+								"y": "Player.Y - 750",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 931316112335787
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 188552611819049,
+							"parameters": {
+								"first-value": "spawn",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 465944175089910,
+							"parameters": {
+								"object-to-create": "corntext",
+								"layer": "0",
+								"x": "choose(375, 500)",
+								"y": "Player.Y - 750",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 667388750271187
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "corntext",
+					"sid": 100198214427887,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "corntext",
+					"sid": 483921920178057,
+					"parameters": {
+						"angle": "180"
+					}
+				},
+				{
+					"id": "set-flipped",
+					"objectClass": "corntext",
+					"sid": 790671281894149,
+					"parameters": {
+						"state": "flipped"
+					}
+				}
+			],
+			"sid": 875915127247918
 		},
 		{
 			"eventType": "block",

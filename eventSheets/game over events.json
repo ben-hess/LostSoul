@@ -1,0 +1,121 @@
+{
+	"name": "Game Over Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 904731709839168
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 420358946510492,
+					"parameters": {
+						"seconds": "5.2"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 531048310559767,
+					"parameters": {
+						"object-to-create": "Restart",
+						"layer": "0",
+						"x": "426.5",
+						"y": "385",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Restart",
+					"sid": 441514519814834,
+					"parameters": {
+						"width": "178",
+						"height": "56"
+					}
+				}
+			],
+			"sid": 597312093144001
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 850810714338813,
+					"parameters": {
+						"object": "Restart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Restart",
+					"sid": 357182213380982,
+					"parameters": {
+						"animation": "\"Hover\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 992190790166674
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 983312733931220
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Restart",
+					"sid": 193978755543019,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 852083666815940
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 725173521109220,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Restart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 178934342878697,
+					"parameters": {
+						"layout": "Playing"
+					}
+				}
+			],
+			"sid": 393456381340080
+		}
+	],
+	"sid": 398146876728736
+}

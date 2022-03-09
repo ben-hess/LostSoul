@@ -1,0 +1,55 @@
+{
+	"name": "corntext",
+	"plugin-id": "Sprite",
+	"sid": 472470138390971,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 956582353283849
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 853,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5939065,
+						"collisionPoly": {
+							"points": [
+								0.4232121296532688,
+								0.44374998410542776,
+								0.8440796828633316,
+								0.42083334922790483,
+								0.8440795039795213,
+								0.6604166030883779,
+								0.42672925369960363,
+								0.6208332379659013
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 539316418820545,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
