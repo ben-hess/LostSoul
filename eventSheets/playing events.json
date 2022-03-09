@@ -138,6 +138,17 @@
 								"y": "Player.Y - 750",
 								"create-hierarchy": false
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Sounds",
+							"sid": 717910231849930,
+							"parameters": {
+								"audio-file": "Demon_wing",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"Wing\""
+							}
 						}
 					],
 					"sid": 931316112335787
@@ -319,6 +330,11 @@
 					"parameters": {
 						"layout": "Game Over"
 					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 873055500148147
 				}
 			],
 			"sid": 244007988754048,
@@ -350,6 +366,17 @@
 					"id": "destroy",
 					"objectClass": "Demon",
 					"sid": 335098974256499
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 696366533822984,
+					"parameters": {
+						"audio-file": "Player_Hurt",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Hurt\""
+					}
 				}
 			],
 			"sid": 513395574590917
@@ -567,10 +594,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Fireball",
-					"sid": 222548135913692,
+					"sid": 255348651907333,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"speed": "250"
+						"speed": "200"
 					}
 				}
 			],
@@ -602,9 +629,68 @@
 					"id": "destroy",
 					"objectClass": "Fireball",
 					"sid": 169455795292457
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 634590411397231,
+					"parameters": {
+						"audio-file": "Player_Hurt",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Hurt\""
+					}
 				}
 			],
 			"sid": 249371451651385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 258307111194424
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 829972879355968,
+					"parameters": {
+						"audio-file": "Playing_Music",
+						"loop": "looping",
+						"volume": "-5",
+						"tag-optional": "\"Playing Music\""
+					}
+				}
+			],
+			"sid": 805388844399148
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 497713330177389
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Sounds",
+					"sid": 554834679207129,
+					"parameters": {
+						"tag": "\"Playing Music\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "stop"
+					}
+				}
+			],
+			"sid": 566172411463952
 		}
 	],
 	"sid": 495272229182463

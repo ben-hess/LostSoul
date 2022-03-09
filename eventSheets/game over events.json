@@ -112,9 +112,44 @@
 					"parameters": {
 						"layout": "Playing"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 128253552272752,
+					"parameters": {
+						"audio-file": "button_press",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Press\""
+					}
 				}
 			],
 			"sid": 393456381340080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 676412617656940
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 310782570223428,
+					"parameters": {
+						"audio-file": "Reaper_Laugh",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Reaper Laugh\""
+					}
+				}
+			],
+			"sid": 673007027082839
 		}
 	],
 	"sid": 398146876728736

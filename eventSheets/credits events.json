@@ -70,6 +70,17 @@
 					"parameters": {
 						"layout": "Start Screen"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 197599159713418,
+					"parameters": {
+						"audio-file": "button_press",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Press\""
+					}
 				}
 			],
 			"sid": 372292377047010

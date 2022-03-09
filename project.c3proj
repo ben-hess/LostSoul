@@ -31,6 +31,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
@@ -90,7 +98,9 @@
 			"Credit",
 			"Back",
 			"corntext",
-			"Restart"
+			"Restart",
+			"Health",
+			"Sounds"
 		],
 		"subfolders": []
 	},
@@ -128,7 +138,38 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Lost_Soul_Intro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 193899156921728
+				},
+				{
+					"name": "Reaper_Laugh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 999498246174775
+				},
+				{
+					"name": "Playing_Music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 323171135315290
+				},
+				{
+					"name": "button_press.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 647077237348775
+				},
+				{
+					"name": "Demon_wing.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 212102847383303
+				},
+				{
+					"name": "Player_Hurt.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 919920343074060
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

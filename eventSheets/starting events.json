@@ -70,6 +70,17 @@
 					"parameters": {
 						"layout": "Playing"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 234338271659179,
+					"parameters": {
+						"audio-file": "button_press",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Press\""
+					}
 				}
 			],
 			"sid": 269856245462829
@@ -143,9 +154,68 @@
 					"parameters": {
 						"layout": "Credits"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 927517247006024,
+					"parameters": {
+						"audio-file": "button_press",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Press\""
+					}
 				}
 			],
 			"sid": 413093209525413
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 638310325461185
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 422809419217777,
+					"parameters": {
+						"audio-file": "Lost_Soul_Intro",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"Start Screen Music\""
+					}
+				}
+			],
+			"sid": 502431097166161
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 936053111426253
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Sounds",
+					"sid": 184192538338502,
+					"parameters": {
+						"tag": "\"Start Screen Music\"",
+						"db": "-100",
+						"duration": "2",
+						"ending": "stop"
+					}
+				}
+			],
+			"sid": 160257512265388
 		}
 	],
 	"sid": 907866529447905
