@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "nextSpawnY",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "300",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -693,6 +693,15 @@
 						"loop": "looping",
 						"volume": "-5",
 						"tag-optional": "\"Playing Music\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 116109370115551,
+					"parameters": {
+						"variable": "nextSpawnY",
+						"value": "300"
 					}
 				}
 			],
