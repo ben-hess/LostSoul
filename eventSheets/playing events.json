@@ -94,10 +94,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 515821428345301,
+					"sid": 998970282531215,
 					"parameters": {
 						"variable": "spawn",
-						"value": "choose(0, 1)"
+						"value": "choose(0, 1, 2)"
 					}
 				},
 				{
@@ -118,7 +118,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 307521554051765,
+							"sid": 803900503907016,
 							"parameters": {
 								"first-value": "spawn",
 								"comparison": 0,
@@ -130,7 +130,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 795728654386517,
+							"sid": 880105563610059,
 							"parameters": {
 								"object-to-create": "Demon",
 								"layer": "0",
@@ -142,7 +142,7 @@
 						{
 							"id": "play",
 							"objectClass": "Sounds",
-							"sid": 717910231849930,
+							"sid": 783299835962632,
 							"parameters": {
 								"audio-file": "Demon_wing",
 								"loop": "not-looping",
@@ -151,7 +151,7 @@
 							}
 						}
 					],
-					"sid": 931316112335787
+					"sid": 669415657903202
 				},
 				{
 					"eventType": "block",
@@ -159,7 +159,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 188552611819049,
+							"sid": 622383364620128,
 							"parameters": {
 								"first-value": "spawn",
 								"comparison": 0,
@@ -171,7 +171,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 465944175089910,
+							"sid": 278061430923820,
 							"parameters": {
 								"object-to-create": "corntext",
 								"layer": "0",
@@ -181,7 +181,37 @@
 							}
 						}
 					],
-					"sid": 667388750271187
+					"sid": 271397555879042
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 470594915965751,
+							"parameters": {
+								"variable": "spawn",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 779946135848702,
+							"parameters": {
+								"object-to-create": "Spikeball",
+								"layer": "0",
+								"x": "random(150, 700)",
+								"y": "Player.Y - 750",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 831015254660576
 				}
 			]
 		},
@@ -691,6 +721,47 @@
 				}
 			],
 			"sid": 566172411463952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 595952835493449,
+					"parameters": {
+						"object": "Spikeball"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 260861306846752,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Spikeball",
+					"sid": 359222367876795
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 991712824735562,
+					"parameters": {
+						"audio-file": "Player_Hurt",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Hurt\""
+					}
+				}
+			],
+			"sid": 869995664001542
 		}
 	],
 	"sid": 495272229182463

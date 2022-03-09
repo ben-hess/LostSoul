@@ -74,11 +74,11 @@
 				{
 					"id": "play",
 					"objectClass": "Sounds",
-					"sid": 234338271659179,
+					"sid": 783279519504090,
 					"parameters": {
 						"audio-file": "button_press",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-15",
 						"tag-optional": "\"Press\""
 					}
 				}
@@ -158,11 +158,11 @@
 				{
 					"id": "play",
 					"objectClass": "Sounds",
-					"sid": 927517247006024,
+					"sid": 805521318132008,
 					"parameters": {
 						"audio-file": "button_press",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-15",
 						"tag-optional": "\"Press\""
 					}
 				}

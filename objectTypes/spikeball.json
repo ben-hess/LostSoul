@@ -1,0 +1,55 @@
+{
+	"name": "Spikeball",
+	"plugin-id": "Sprite",
+	"sid": 751986152117687,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 225,
+						"height": 190,
+						"originX": 0.7644444444444445,
+						"originY": 0.7605263157894737,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4234496,
+						"collisionPoly": {
+							"points": [
+								0.2488888888888889,
+								0.29473684210526313,
+								0.7644444444444445,
+								0.29473684210526313,
+								0.8488888888888889,
+								0.7605263157894737,
+								0.8577777777777778,
+								0.7263157894736842,
+								0.7644444444444445,
+								0.8315789473684209,
+								0.5066666666666666,
+								0.9157894736842105,
+								0.1111111111111111,
+								0.7605263157894737
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 337264990103368,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

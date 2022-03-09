@@ -280,6 +280,35 @@
 					}
 				},
 				{
+					"type": "Spikeball",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1037,
+						"y": 161,
+						"width": 62,
+						"height": 54,
+						"originX": 0.7644444444444445,
+						"originY": 0.7605263157894737,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,

@@ -116,11 +116,11 @@
 				{
 					"id": "play",
 					"objectClass": "Sounds",
-					"sid": 128253552272752,
+					"sid": 906667498934556,
 					"parameters": {
 						"audio-file": "button_press",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-15",
 						"tag-optional": "\"Press\""
 					}
 				}
