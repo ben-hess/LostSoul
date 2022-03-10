@@ -90,7 +90,6 @@
 			"Collision",
 			"Camera",
 			"Fireball",
-			"StartBackground",
 			"Ending_Screen",
 			"StartGame",
 			"Mouse",
@@ -101,7 +100,8 @@
 			"Restart",
 			"Health",
 			"Sounds",
-			"Spikeball"
+			"Spikeball",
+			"Start_Screen_v"
 		],
 		"subfolders": []
 	},

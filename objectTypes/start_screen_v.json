@@ -1,7 +1,7 @@
 {
-	"name": "StartBackground",
+	"name": "Start_Screen_v",
 	"plugin-id": "Sprite",
-	"sid": 903776470100714,
+	"sid": 138981250039101,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,33 +18,13 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1421392,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.5,
-								0,
-								0.9988276670574443,
-								0,
-								0.9988276670574443,
-								0.5,
-								0.9988276670574443,
-								0.9979166666666667,
-								0.5,
-								0.9979166666666667,
-								0,
-								0.9979166666666667,
-								0,
-								0.5
-							]
-						},
+						"imageSpriteId": 7418703,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 276206391828998,
-				"name": "Animation 1",
+				"sid": 808994067786040,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

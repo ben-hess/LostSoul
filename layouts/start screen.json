@@ -7,10 +7,10 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "StartBackground",
+					"type": "Start_Screen_v",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -19,8 +19,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 427,
-						"y": 240,
+						"x": 426.5,
+						"y": 239.96473976527318,
 						"width": 853,
 						"height": 480,
 						"originX": 0.5,
@@ -48,8 +48,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 426.5,
-						"y": 313.50918480603184,
+						"x": 197,
+						"y": 237.5033603234578,
 						"width": 179.31618199841873,
 						"height": 43.44732834379494,
 						"originX": 0.5,
@@ -77,8 +77,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 426.5,
-						"y": 372.0620057366221,
+						"x": 197,
+						"y": 312.79185928808505,
 						"width": 97.57869396738481,
 						"height": 32.14801933033995,
 						"originX": 0.5,

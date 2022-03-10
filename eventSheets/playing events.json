@@ -94,19 +94,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 998970282531215,
+					"sid": 482595094142196,
 					"parameters": {
 						"variable": "spawn",
-						"value": "choose(0, 1, 2)"
+						"value": "choose(0, 0, 0, 0, 1, 1, 1, 2, 2, 2)"
 					}
 				},
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 364596333867288,
+					"sid": 460567433114948,
 					"parameters": {
 						"variable": "nextSpawnY",
-						"value": "random(-300, -800)"
+						"value": "random(-200, -700)"
 					}
 				}
 			],
