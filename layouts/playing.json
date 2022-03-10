@@ -365,7 +365,7 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 200,
+								"speed": 300,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -432,23 +432,6 @@
 				"parameters": {
 					"start-radius": 0.3,
 					"end-radius": 0.9
-				}
-			}
-		},
-		{
-			"effectId": "water",
-			"name": "Water",
-			"instance": {
-				"parameters": {
-					"speed": 0.1,
-					"x-speed": 0.3,
-					"y-speed": 0.3,
-					"intensity": 0,
-					"frequency": 4,
-					"angle": 7,
-					"delta": 20,
-					"reflectivity": 0,
-					"emboss": 0.3
 				}
 			}
 		}

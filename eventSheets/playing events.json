@@ -640,10 +640,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Fireball",
-					"sid": 255348651907333,
+					"sid": 640763191335544,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"speed": "200"
+						"speed": "250"
 					}
 				}
 			],
@@ -803,6 +803,31 @@
 				}
 			],
 			"sid": 869995664001542
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "GrimReaper",
+					"sid": 519094463557315,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "Player.Y + 400"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "GrimReaper",
+					"sid": 441425772001203,
+					"parameters": {
+						"y": "Player.Y + 400"
+					}
+				}
+			],
+			"sid": 387080269573250
 		}
 	],
 	"sid": 495272229182463
