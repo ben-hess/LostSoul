@@ -1,0 +1,27 @@
+{
+	"name": "Start Video Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "StartingVideo",
+					"sid": 355505604410222
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 232110934370979,
+					"parameters": {
+						"layout": "Start Screen"
+					}
+				}
+			],
+			"sid": 572963110174388
+		}
+	],
+	"sid": 552730630626554
+}

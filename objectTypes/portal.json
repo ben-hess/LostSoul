@@ -1,7 +1,7 @@
 {
-	"name": "Start_Screen_v",
+	"name": "Portal",
 	"plugin-id": "Sprite",
-	"sid": 138981250039101,
+	"sid": 614100665593278,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,40 +11,34 @@
 			{
 				"frames": [
 					{
-						"width": 853,
-						"height": 480,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 1905,
+						"height": 880,
+						"originX": 0.48766404199475066,
+						"originY": -0.26363636363636367,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5974748,
+						"imageSpriteId": 8976212,
 						"collisionPoly": {
 							"points": [
-								0,
-								0,
-								0.5,
-								0,
-								0.9988276670574443,
-								0,
-								0.9988276670574443,
-								0.5,
-								0.9988276670574443,
-								0.9979166666666667,
-								0.5,
-								0.9979166666666667,
-								0,
-								0.9979166666666667,
-								0,
-								0.5
+								0.8131233595800524,
+								0.8295454545454546,
+								0.48766404199475066,
+								0.9613636363636364,
+								0.13018372703412073,
+								0.9,
+								0.8719160104986876,
+								0.17954545454545456,
+								0.48766404199475066,
+								0.19431818181818183
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 808994067786040,
-				"name": "Default",
+				"sid": 842022093114079,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

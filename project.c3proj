@@ -69,6 +69,14 @@
 			"author": "Brad Larson",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "6n8wkkynt5x",
@@ -93,7 +101,10 @@
 			"Sounds",
 			"Spikeball",
 			"Start_Screen_v",
-			"Health"
+			"Health",
+			"Gauntlet",
+			"Portal",
+			"StartingVideo"
 		],
 		"subfolders": []
 	},
@@ -108,7 +119,8 @@
 			"Playing",
 			"Game Over",
 			"Start Screen",
-			"Credits"
+			"Credits",
+			"Start Video"
 		],
 		"subfolders": []
 	},
@@ -117,7 +129,8 @@
 			"Playing Events",
 			"Credits Events",
 			"Starting Events",
-			"Game Over Events"
+			"Game Over Events",
+			"Start Video Events"
 		],
 		"subfolders": []
 	},
@@ -171,6 +184,11 @@
 					"name": "GameOverFinal.mp4",
 					"type": "video/mp4",
 					"sid": 478882069795265
+				},
+				{
+					"name": "StartMovie.mp4",
+					"type": "video/mp4",
+					"sid": 731433815124451
 				}
 			],
 			"subfolders": []
@@ -307,5 +325,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": "Start Screen"
+	"firstLayout": "Start Video"
 }

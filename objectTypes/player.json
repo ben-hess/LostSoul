@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "The amount of hits the player can take",
 			"sid": 806953289384941
+		},
+		{
+			"name": "Pieces_Collected",
+			"type": "number",
+			"desc": "Number of Gauntlet pieces the player has collected",
+			"sid": 734657708268369
 		}
 	],
 	"behaviorTypes": [

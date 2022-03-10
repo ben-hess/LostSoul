@@ -102,10 +102,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 482595094142196,
+					"sid": 559879888280474,
 					"parameters": {
 						"variable": "spawn",
-						"value": "choose(0, 0, 0, 0, 1, 1, 1, 2, 2, 2)"
+						"value": "choose(0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3)"
 					}
 				},
 				{
@@ -220,6 +220,46 @@
 						}
 					],
 					"sid": 831015254660576
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 610256997286215,
+							"parameters": {
+								"variable": "spawn",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 203145877782215,
+							"parameters": {
+								"variable": "nextSpawnY",
+								"comparison": 2,
+								"value": "-2400"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 213873712544845,
+							"parameters": {
+								"object-to-create": "Gauntlet",
+								"layer": "0",
+								"x": "random(150, 700)",
+								"y": "Player.Y - 750",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 636727023612047
 				}
 			]
 		},
@@ -640,10 +680,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Fireball",
-					"sid": 640763191335544,
+					"sid": 255348651907333,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"speed": "250"
+						"speed": "200"
 					}
 				}
 			],
@@ -810,10 +850,10 @@
 				{
 					"id": "compare-y",
 					"objectClass": "GrimReaper",
-					"sid": 519094463557315,
+					"sid": 452664336851934,
 					"parameters": {
 						"comparison": 4,
-						"y-co-ordinate": "Player.Y + 400"
+						"y-co-ordinate": "Player.Y + 500"
 					}
 				}
 			],
@@ -821,13 +861,105 @@
 				{
 					"id": "set-y",
 					"objectClass": "GrimReaper",
-					"sid": 441425772001203,
+					"sid": 778648247261386,
 					"parameters": {
-						"y": "Player.Y + 400"
+						"y": "Player.Y + 500"
 					}
 				}
 			],
-			"sid": 387080269573250
+			"sid": 726789303965263
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 243620306157019,
+					"parameters": {
+						"object": "Gauntlet"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Gauntlet",
+					"sid": 488936204589837
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 778622553256366,
+					"parameters": {
+						"instance-variable": "Pieces_Collected",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Gauntlet",
+					"sid": 283065114242210,
+					"parameters": {
+						"frame-number": "Gauntlet.AnimationFrame + 1"
+					}
+				}
+			],
+			"sid": 945662052605192
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 424741507297837,
+					"parameters": {
+						"instance-variable": "Pieces_Collected",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 996815775007163,
+					"parameters": {
+						"object-to-create": "Portal",
+						"layer": "0",
+						"x": "426",
+						"y": "Player.Y - 750",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 302566919100498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 436114660513413,
+					"parameters": {
+						"object": "Portal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 140023255790683,
+					"parameters": {
+						"layout": "Game Over"
+					}
+				}
+			],
+			"sid": 472480555251480
 		}
 	],
 	"sid": 495272229182463

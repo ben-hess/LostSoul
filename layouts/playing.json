@@ -309,6 +309,64 @@
 					}
 				},
 				{
+					"type": "Gauntlet",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1029,
+						"y": 341,
+						"width": 66,
+						"height": 97,
+						"originX": 0.6818181818181818,
+						"originY": 0.8814432989690721,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Portal",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1505,
+						"y": -94,
+						"width": 587,
+						"height": 210,
+						"originX": 0.48766404199475066,
+						"originY": -0.26363636363636367,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -319,7 +377,8 @@
 					},
 					"uid": 3,
 					"instanceVariables": {
-						"Health": 4
+						"Health": 4,
+						"Pieces_Collected": 0
 					},
 					"behaviors": {
 						"8Direction": {
@@ -365,7 +424,7 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 300,
+								"speed": 200,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -432,6 +491,23 @@
 				"parameters": {
 					"start-radius": 0.3,
 					"end-radius": 0.9
+				}
+			}
+		},
+		{
+			"effectId": "water",
+			"name": "Water",
+			"instance": {
+				"parameters": {
+					"speed": 0.1,
+					"x-speed": 0.3,
+					"y-speed": 0.3,
+					"intensity": 0,
+					"frequency": 4,
+					"angle": 7,
+					"delta": 20,
+					"reflectivity": 0,
+					"emboss": 0.3
 				}
 			}
 		}
