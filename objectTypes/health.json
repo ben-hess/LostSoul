@@ -1,7 +1,7 @@
 {
 	"name": "Health",
 	"plugin-id": "Sprite",
-	"sid": 317077296171811,
+	"sid": 797594522767088,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,25 +11,61 @@
 			{
 				"frames": [
 					{
-						"width": 111,
-						"height": 203,
-						"originX": 6.657657657657658,
-						"originY": 3.1083743842364533,
+						"width": 136,
+						"height": 226,
+						"originX": 5.507352941176471,
+						"originY": 2.849557522123894,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8184839,
+						"imageSpriteId": 7170029,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 140,
+						"height": 226,
+						"originX": 5.378571428571429,
+						"originY": 2.849557522123894,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8447513,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 136,
+						"height": 226,
+						"originX": 5.507352941176471,
+						"originY": 2.849557522123894,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2675157,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 136,
+						"height": 226,
+						"originX": 5.507352941176471,
+						"originY": 2.849557522123894,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3989472,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 967739839683557,
+				"sid": 535383991807135,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
-				"repeatCount": 1,
+				"repeatCount": 4,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

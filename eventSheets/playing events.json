@@ -72,6 +72,14 @@
 					"parameters": {
 						"y": "Player.Y - 50"
 					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Health",
+					"sid": 208219626900784,
+					"parameters": {
+						"y": "Player.Y - 100"
+					}
 				}
 			],
 			"sid": 955563116371622
@@ -407,6 +415,14 @@
 						"volume": "0",
 						"tag-optional": "\"Hurt\""
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 907243859412039,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame + 1"
+					}
 				}
 			],
 			"sid": 513395574590917
@@ -670,6 +686,14 @@
 						"volume": "0",
 						"tag-optional": "\"Hurt\""
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 333520664485518,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame + 1"
+					}
 				}
 			],
 			"sid": 249371451651385
@@ -767,6 +791,14 @@
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"Hurt\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 166942215041737,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame + 1"
 					}
 				}
 			],
