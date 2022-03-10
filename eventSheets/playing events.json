@@ -217,6 +217,17 @@
 								"y": "Player.Y - 750",
 								"create-hierarchy": false
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Sounds",
+							"sid": 669220725601590,
+							"parameters": {
+								"audio-file": "spikeball",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"Spikeball Creation\""
+							}
 						}
 					],
 					"sid": 831015254660576
@@ -237,11 +248,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 203145877782215,
+							"sid": 793229802220485,
 							"parameters": {
 								"variable": "nextSpawnY",
 								"comparison": 2,
-								"value": "-2400"
+								"value": "-1800"
 							}
 						}
 					],
@@ -751,11 +762,11 @@
 				{
 					"id": "play",
 					"objectClass": "Sounds",
-					"sid": 829972879355968,
+					"sid": 406001812816500,
 					"parameters": {
 						"audio-file": "Playing_Music",
 						"loop": "looping",
-						"volume": "-5",
+						"volume": "-7",
 						"tag-optional": "\"Playing Music\""
 					}
 				},
@@ -784,11 +795,11 @@
 				{
 					"id": "fade-volume",
 					"objectClass": "Sounds",
-					"sid": 554834679207129,
+					"sid": 727326626479789,
 					"parameters": {
 						"tag": "\"Playing Music\"",
 						"db": "-100",
-						"duration": "1",
+						"duration": "2",
 						"ending": "stop"
 					}
 				}
@@ -902,6 +913,17 @@
 					"sid": 283065114242210,
 					"parameters": {
 						"frame-number": "Gauntlet.AnimationFrame + 1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 294425073181171,
+					"parameters": {
+						"audio-file": "gauntlet_coll",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
 					}
 				}
 			],

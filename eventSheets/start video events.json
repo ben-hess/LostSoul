@@ -21,6 +21,54 @@
 				}
 			],
 			"sid": 572963110174388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 956530662180763
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 741436993431109,
+					"parameters": {
+						"audio-file": "StartVid",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Bruh\""
+					}
+				}
+			],
+			"sid": 788606624873552
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 450273194561613
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Sounds",
+					"sid": 966486419631526,
+					"parameters": {
+						"tag": "\"Bruh\"",
+						"db": "-100",
+						"duration": "1.5",
+						"ending": "stop"
+					}
+				}
+			],
+			"sid": 159070967501195
 		}
 	],
 	"sid": 552730630626554
