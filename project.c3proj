@@ -69,14 +69,6 @@
 			"author": "Brad Larson",
 			"version": "r285.3",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "water",
-			"name": "Water",
-			"author": "Viktor Korsun",
-			"version": "r285.3",
-			"bundled": false
 		}
 	],
 	"uniqueId": "6n8wkkynt5x",

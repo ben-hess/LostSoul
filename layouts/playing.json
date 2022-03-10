@@ -434,23 +434,6 @@
 					"end-radius": 0.9
 				}
 			}
-		},
-		{
-			"effectId": "water",
-			"name": "Water",
-			"instance": {
-				"parameters": {
-					"speed": 0.1,
-					"x-speed": 0.3,
-					"y-speed": 0.3,
-					"intensity": 0,
-					"frequency": 4,
-					"angle": 7,
-					"delta": 20,
-					"reflectivity": 0,
-					"emboss": 0.3
-				}
-			}
 		}
 	],
 	"width": 1708,
