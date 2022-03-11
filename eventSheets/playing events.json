@@ -13,6 +13,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "GauntletFrame",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Frame of the Gauntlet Animation",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 111639823580965
+		},
+		{
+			"eventType": "variable",
 			"name": "nextSpawnY",
 			"type": "number",
 			"initialValue": "300",
@@ -102,10 +112,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 559879888280474,
+					"sid": 159422815881351,
 					"parameters": {
 						"variable": "spawn",
-						"value": "choose(0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3)"
+						"value": "choose(0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3)"
 					}
 				},
 				{
@@ -257,6 +267,14 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Gauntlet",
+							"sid": 324931664779178,
+							"parameters": {
+								"frame-number": "GauntletFrame"
+							}
+						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
@@ -424,6 +442,15 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 873055500148147
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 566942595362550,
+					"parameters": {
+						"variable": "GauntletFrame",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 244007988754048,
@@ -908,14 +935,6 @@
 					}
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "Gauntlet",
-					"sid": 283065114242210,
-					"parameters": {
-						"frame-number": "Gauntlet.AnimationFrame + 1"
-					}
-				},
-				{
 					"id": "play",
 					"objectClass": "Sounds",
 					"sid": 294425073181171,
@@ -924,6 +943,15 @@
 						"loop": "not-looping",
 						"volume": "-5",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 696752131447842,
+					"parameters": {
+						"variable": "GauntletFrame",
+						"value": "1"
 					}
 				}
 			],
@@ -955,6 +983,26 @@
 						"y": "Player.Y - 750",
 						"create-hierarchy": false
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Sounds",
+					"sid": 261017738025125,
+					"parameters": {
+						"audio-file": "portal",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Player",
+					"sid": 144269659186071,
+					"parameters": {
+						"instance-variable": "Pieces_Collected",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 302566919100498
@@ -975,9 +1023,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 140023255790683,
+					"sid": 510868311960513,
 					"parameters": {
-						"layout": "Game Over"
+						"layout": "Start Screen"
 					}
 				}
 			],
